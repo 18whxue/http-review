@@ -58,6 +58,10 @@
         {
             document.getElementById("screen").value+=pressChar.value;
         }
+        function add2(pressSpecil)//加入一个字符
+        {
+            document.getElementById("screen").value+=pressSpecil.name;
+        }
         function backChar()//回退一个字符
         {
             var b = document.getElementById("screen");
@@ -102,13 +106,13 @@
         <th><input type="button" class="culNumber" value="7" onclick="add(this)"></th>
         <th><input type="button" class="culNumber" value="8" onclick="add(this)"></th>
         <th><input type="button" class="culNumber" value="9" onclick="add(this)"></th>
-        <th><input type="button" class="culOperator" value="*" onclick="add(this)"></th>
+        <th><input type="button" class="culOperator" name="*" value="×" onclick="add2(this)"></th>
     </tr>
     <tr>
         <th><input type="button" class="culNumber" value="0" onclick="add(this)"></th>
         <th><input type="button" class="culNumber" value="." onclick="add(this)"></th>
         <th><input type="button" class="culOperator" value="=" onclick="getResult()"></th>
-        <th><input type="button" class="culOperator" value="/" onclick="add(this)"></th>
+        <th><input type="button" class="culOperator" name="/" value="÷" onclick="add2(this)"></th>
     </tr>
 </table>
 </div>
