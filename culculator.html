@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>计算器</title>
+    <title>Culculator</title>
     <style type="text/css">
         .culNumber
         {
@@ -39,6 +39,12 @@
         {
             margin:30px auto;
         }
+        div{
+            width: 500px;
+            border: 20px solid coral;
+            padding: 20px;
+            margin: 25px auto;
+        }
     </style>
     <script type="text/javascript">
         function add(pressChar)//加入一个字符
@@ -62,6 +68,7 @@
     </script>
 </head>
 <body style="background-color: antiquewhite ">
+<div>
 <table >
     <tr>
         <th colspan="4"  ><input id="screen"  ></th>
@@ -97,5 +104,6 @@
         <th><input type="button" class="culOperator" value="/" onclick="add(this)"></th>
     </tr>
 </table>
+</div>
 </body>
 </html>
